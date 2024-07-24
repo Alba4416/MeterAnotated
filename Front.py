@@ -17,7 +17,7 @@ if uploaded_file is not None:
 
     # 動画をFastAPIサーバーに送信する
     files = {"file": uploaded_file.getvalue()}
-    response = requests.post("http://127.0.0.1:8000/upload-video/", files=files)
+    response = requests.post("https://new-api-endpoint.com/upload-video/", files=files)
 
     if response.status_code == 200:
         st.success("ファイルが正常にアップロードされ、変換されました。")
