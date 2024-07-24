@@ -1,6 +1,11 @@
 import streamlit as st
 import requests
 import os
+import logging
+
+# ログ設定
+logging.basicConfig(level=logging.DEBUG)
+
 
 st.title("動画アップロードアプリ")
 
